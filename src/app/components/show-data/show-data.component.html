@@ -1,0 +1,14 @@
+<mat-card appearance="outlined" class="card">
+  <div class="column">
+    <h3>Symbol</h3>
+    <p>{{symbol}}</p>
+  </div>
+  <div class="column">
+    <h3>Price</h3>
+    <p>{{price | async}}</p>
+  </div>
+  <div class="column">
+    <h3>Time</h3>
+    <p>{{timestamp | async | date: "medium"}}</p>
+  </div>
+</mat-card>
